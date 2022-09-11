@@ -1,0 +1,174 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+  display: flex;              /* Transformation en flexbox */
+  padding:0;                  /* Suppression des marges internes */
+  background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+}
+.menu li {
+  list-style-type: none ;       /* Suppression des puces */
+}
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */
+}
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */   
+  
+  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;           /* Centrage du texte */   
+  background-color: #ff0000;    /* Couleur d'arrière-plan */
+  color: #fff;                  /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+  border: 1px solid #fff;       /* Ajout d'une bordure */
+  border-radius: 4px;           /* Arrondis des bordures */
+}
+.menu {
+  display: flex;              /* Transformation en flexbox */
+  padding:0;                  /* Suppression des marges internes */
+  background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+  justify-content: center     /* Alignements des liens dans le menu */
+}
+.menu a:hover {
+  background-color: #808080;
+  color: #000000;
+  border-color: #000000;
+}
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */   
+  
+  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;           /* Centrage du texte */   
+  background-color: #000000;    /* Arrière-plan */
+  color: #fff;                  /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+  border: 1px solid #fff;       /* Ajout d'une bordure */
+  border-radius: 4px;           /* Arrondis des bordures */
+  transition: all 1s ;          /* Ajout des effets de transition */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color: #000000;
+  color: #ffffff;
+  }
+  a {
+  color: #5fa9ee;
+  }
+  img {
+  filter: grayscale(20%);
+  }
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto", sans-serif;
+  }
+  
+ 
+
+    footer {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      background-color: #303030;
+      color: rgb(0, 0, 0);
+  }
+
+  const options = {
+    bottom: '64px', // default: '32px'
+    right: 'unset', // default: '32px'
+    left: '32px', // default: 'unset'
+    time: '0.5s', // default: '0.3s'
+    mixColor: '#fff', // default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: false, // default: true,
+    label: '🌓', // default: ''
+    autoMatchOsTheme: true // default: true
+  }
+  
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
+
+  const darkmode =  new Darkmode();
+darkmode.toggle();
+console.log(darkmode.isActivated()) // will return true
+
+/* global css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* header */
+
+.main-head {
+    background: #0a2b19;
+    color: #ffffff;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem;
+}
+

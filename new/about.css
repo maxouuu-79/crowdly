@@ -1,0 +1,163 @@
+/* global css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 1.8rem;
+}
+
+li,
+button {
+  font-size: 2rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+
+.main-head {
+  background: #000000;
+  color: #ffffff;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+}
+
+/* hero */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), transparent),
+    url("https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 4rem;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #000000;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 885px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}
+
+/* Styles for light theme */
+.theme-light {
+  background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+/* Styles for dark theme */
+.theme-dark {
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+.emoji {
+  isolation: isolate;
+}
+
+/* elements that create their a stacking context are automatically isolated */
+.footer {
+  z-index: 1;
+}
+
+/* details */
+details {
+  border: 3px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  width: 50%;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+/* zone de texte */
+.border {
+  border: 1px solid black;
+  padding: 5px;
+}

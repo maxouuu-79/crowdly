@@ -1,0 +1,1 @@
+alert("Cette page sera bientot disponible ! :)");

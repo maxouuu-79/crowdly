@@ -212,3 +212,18 @@ h5::selection {
 h6::selection {
   background-color: #99a3a4;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #99a3a4;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 50px;
+}
